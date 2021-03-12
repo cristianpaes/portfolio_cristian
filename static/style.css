@@ -33,8 +33,9 @@ color: white !important;
 }
 
 .btnCont:hover{
-    color: white;
-    border: 2px solid rgb(252, 252, 252)
+    background-color: white;
+    color: blue;
+    border: 2px solid rgb(252, 252, 252);
 }
 
 
