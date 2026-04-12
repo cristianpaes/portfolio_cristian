@@ -1,102 +1,259 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===== RESET ===== */
 
-i {
-    margin-right: 10px;
-    color:white;
-}
-
-i:hover{
-    color:#07ffb5;
-}
-
-.lead{
-color: white !important;
-}
-
-.btnCont{
-    
-    border: 2px solid rgb(0, 165, 124);
-    background: none;
-    color: rgb(0, 165, 124);
-    padding: 10px 15px;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    position: relative;
-    overflow: hidden;
-    
-}
-
-.btnCont:hover{
-    background-color: white;
-    color: blue;
-    border: 2px solid rgb(252, 252, 252);
-}
-
-
-
-p {
-    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.foto-perfil {
-    height: 300px;
-    max-width: auto;
-    border-radius: 50%;
-}
-
-.icones {
-    padding-left: 5px;
-}
-
-.navbar {
-    background-color: transparent;
-}
-
-.titulosBrancos {
-    text-decoration: underline;
-    text-underline-position: under;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-}
-
-.titulos_cor {
-    text-decoration: underline;
-    text-underline-position: under;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #0B3861;
-}
-
-.paragrafoBrancos {
-    color: white !important;
-}
-
-
-.jumbotron {
-    margin-bottom: 0px;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
+}
+
+/* ===== TIPOGRAFIA ===== */
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+background-color: #f8f9fa;
 }
 
 p {
-    color: black !important;
+font-size: 16px;
+color: #333;
 }
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+background-color: #0B3861 !important;
+box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+font-weight: 700;
+color: white !important;
+}
+
+.nav-link {
+color: white !important;
+transition: 0.3s;
+}
+
+.nav-link:hover {
+color: #07ffb5 !important;
+}
+
+/* ===== HERO ===== */
 
 .corPrimaria {
-    background-color: #0B3861;
+background: linear-gradient(135deg,#0B3861,#003366);
+color: white;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
-.itemMenu {
-    color: white;
+/* ===== FOTO PERFIL ===== */
+
+.foto-perfil {
+height: 260px;
+width: 260px;
+border-radius: 50%;
+border: 6px solid white;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+transition: 0.3s;
+}
+
+.foto-perfil:hover {
+transform: scale(1.05);
+}
+
+/* ===== BOTÃO CONTATO ===== */
+
+.btnCont {
+
+border: 2px solid #07ffb5;
+background: transparent;
+color: #07ffb5;
+
+padding: 12px 20px;
+
+font-size: 18px;
+
+text-transform: uppercase;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+border-radius: 6px;
+
+}
+
+.btnCont:hover {
+
+background-color: white;
+
+color: #0B3861;
+
+border: 2px solid white;
+
+transform: translateY(-2px);
+
+}
+
+/* ===== ÍCONES ===== */
+
+i {
+
+margin: 10px;
+
+color: white;
+
+transition: 0.3s;
+
+}
+
+i:hover {
+
+color: #07ffb5;
+
+transform: scale(1.2);
+
+}
+
+/* ===== TÍTULOS ===== */
+
+.titulosBrancos {
+
+text-decoration: underline;
+
+text-underline-position: under;
+
+padding-bottom: 20px;
+
+text-transform: uppercase;
+
+font-weight: 700;
+
+color: white;
+
+}
+
+.titulos_cor {
+
+text-decoration: underline;
+
+text-underline-position: under;
+
+padding-bottom: 20px;
+
+text-transform: uppercase;
+
+font-weight: 700;
+
+color: #0B3861;
+
+}
+
+/* ===== PARÁGRAFOS CLAROS ===== */
+
+.paragrafoBrancos {
+
+color: white;
+
+font-size: 17px;
+
+max-width: 900px;
+
+margin: auto;
+
+}
+
+/* ===== CARDS PROJETOS ===== */
+
+.card {
+
+border-radius: 12px;
+
+overflow: hidden;
+
+transition: 0.3s;
+
+}
+
+.card:hover {
+
+transform: translateY(-6px);
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+/* ===== LISTA TECNOLOGIAS ===== */
+
+ul li {
+
+font-size: 14px;
+
+margin-bottom: 5px;
+
+}
+
+/* ===== DEPOIMENTOS ===== */
+
+blockquote {
+
+font-style: italic;
+
+background: #f1f1f1;
+
+padding: 20px;
+
+border-radius: 10px;
+
+margin-bottom: 20px;
+
+}
+
+/* ===== CONTATO ===== */
+
+#contato {
+
+background: linear-gradient(135deg,#0B3861,#003366);
+
+color: white;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+
+background-color: #212529;
+
+color: white;
+
+font-size: 14px;
+
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+.foto-perfil {
+
+height: 180px;
+width: 180px;
+
+}
+
+.btnCont {
+
+font-size: 16px;
+padding: 10px 16px;
+
+}
+
 }
