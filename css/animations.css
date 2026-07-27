@@ -1,0 +1,540 @@
+/* =====================================================
+   ANIMAÇÕES DO PORTFÓLIO
+===================================================== */
+
+
+/* =====================================================
+   ANIMAÇÃO DE ENTRADA
+===================================================== */
+
+
+.fade-in {
+
+    animation: fadeIn 1s ease forwards;
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+    from {
+
+        opacity:0;
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+
+/* =====================================================
+   SUBIDA SUAVE DOS ELEMENTOS
+===================================================== */
+
+
+.slide-up {
+
+
+    animation: slideUp 1s ease forwards;
+
+
+}
+
+
+
+@keyframes slideUp {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+}
+
+
+
+
+/* =====================================================
+   ENTRADA PELA ESQUERDA
+===================================================== */
+
+
+.slide-left {
+
+
+    animation: slideLeft 1s ease forwards;
+
+
+}
+
+
+
+@keyframes slideLeft {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   ENTRADA PELA DIREITA
+===================================================== */
+
+
+.slide-right {
+
+
+    animation: slideRight 1s ease forwards;
+
+
+}
+
+
+
+@keyframes slideRight {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   FOTO DE PERFIL FLUTUANTE
+===================================================== */
+
+
+.profile-animation {
+
+
+    animation:
+
+    floating 4s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes floating {
+
+
+    0% {
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+
+    50% {
+
+
+        transform:translateY(-15px);
+
+
+    }
+
+
+
+    100% {
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   BRILHO DOS BOTÕES
+===================================================== */
+
+
+.btn-primary,
+.btn-secondary {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.btn-primary::before,
+.btn-secondary::before {
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
+
+
+    left:100%;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   ANIMAÇÃO DOS CARDS
+===================================================== */
+
+
+.project-card,
+.skill-box,
+.cert-card,
+.stat-box {
+
+
+    animation:
+
+    cardAppear .8s ease forwards;
+
+
+}
+
+
+
+
+
+@keyframes cardAppear {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:
+
+        scale(.95)
+
+        translateY(30px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:
+
+        scale(1)
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   EFEITO HOVER TECNOLOGIAS
+===================================================== */
+
+
+.tech-item {
+
+
+    transition:
+
+    transform .3s ease,
+    box-shadow .3s ease;
+
+
+}
+
+
+
+.tech-item:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    box-shadow:
+
+    0 10px 25px rgba(56,189,248,.25);
+
+
+}
+
+
+
+
+
+/* =====================================================
+   TEXTO DIGITANDO
+===================================================== */
+
+
+.typing {
+
+
+    border-right:
+
+    3px solid #38bdf8;
+
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+
+    animation:
+
+    cursorBlink .8s infinite;
+
+
+}
+
+
+
+@keyframes cursorBlink {
+
+
+    50% {
+
+
+        border-color:transparent;
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   REVEAL NO SCROLL
+===================================================== */
+
+
+.reveal {
+
+
+    opacity:0;
+
+    transform:
+
+    translateY(40px);
+
+
+    transition:
+
+    all .8s ease;
+
+
+}
+
+
+
+.reveal.active {
+
+
+    opacity:1;
+
+
+    transform:
+
+    translateY(0);
+
+
+}
+
+
+
+
+
+/* =====================================================
+   PULSAÇÃO DOS ELEMENTOS IMPORTANTES
+===================================================== */
+
+
+.pulse {
+
+
+    animation:
+
+    pulseEffect 2s infinite;
+
+
+}
+
+
+
+@keyframes pulseEffect {
+
+
+    0% {
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(56,189,248,.5);
+
+
+    }
+
+
+
+    70% {
+
+
+        box-shadow:
+
+        0 0 0 20px rgba(56,189,248,0);
+
+
+    }
+
+
+
+    100% {
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(56,189,248,0);
+
+
+    }
+
+
+}

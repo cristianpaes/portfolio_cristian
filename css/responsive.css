@@ -1,0 +1,453 @@
+/* =====================================================
+   RESPONSIVIDADE GERAL
+===================================================== */
+
+
+/* ===============================
+   NOTEBOOKS E TELAS MÉDIAS
+================================ */
+
+@media (max-width:1200px){
+
+
+    .hero {
+
+
+        padding:120px 5% 70px;
+
+    }
+
+
+
+    .hero h1 {
+
+
+        font-size:3rem;
+
+    }
+
+
+
+    .hero-image img {
+
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+
+
+    header {
+
+
+        padding:20px 5%;
+
+    }
+
+
+}
+
+
+
+/* ===============================
+   TABLETS
+================================ */
+
+
+@media(max-width:992px){
+
+
+
+    header {
+
+
+        padding:20px 5%;
+
+    }
+
+
+
+    nav ul {
+
+
+        gap:20px;
+
+    }
+
+
+
+
+    .hero {
+
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        justify-content:center;
+
+    }
+
+
+
+    .hero-content {
+
+
+        max-width:750px;
+
+    }
+
+
+
+    .hero-buttons {
+
+
+        justify-content:center;
+
+    }
+
+
+
+    .hero-image img {
+
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+
+
+    .tech-stack {
+
+
+        justify-content:center;
+
+    }
+
+
+
+    .timeline-item {
+
+
+        padding:25px;
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+    body {
+
+
+        overflow-x:hidden;
+
+    }
+
+
+
+    header {
+
+
+        padding:18px 5%;
+
+    }
+
+
+
+    .logo {
+
+
+        font-size:1.5rem;
+
+    }
+
+
+
+
+    nav {
+
+
+        display:none;
+
+    }
+
+
+
+    .hero {
+
+
+        padding-top:110px;
+
+        min-height:auto;
+
+        gap:35px;
+
+    }
+
+
+
+
+    .hero h1 {
+
+
+        font-size:2.2rem;
+
+    }
+
+
+
+    .hero h2 {
+
+
+        font-size:1.3rem;
+
+    }
+
+
+
+
+    .hero p {
+
+
+        font-size:.95rem;
+
+    }
+
+
+
+
+    .hero-buttons {
+
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+
+
+
+    .btn-primary,
+    .btn-secondary {
+
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+
+
+    .hero-image img {
+
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+
+
+
+    .stats {
+
+
+        grid-template-columns:1fr;
+
+        padding:40px 5%;
+
+    }
+
+
+
+    .stat-box h3 {
+
+
+        font-size:2rem;
+
+    }
+
+
+
+
+    .about,
+    .projects,
+    .skills,
+    .certifications,
+    .contact {
+
+
+        padding:60px 5%;
+
+    }
+
+
+
+
+    .section-title h2 {
+
+
+        font-size:2rem;
+
+    }
+
+
+
+
+    .project-grid {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+    .project-card {
+
+
+        padding:25px;
+
+    }
+
+
+
+
+    .skills-container {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+    .cert-grid {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+    .contact-links {
+
+
+        flex-direction:column;
+
+    }
+
+
+
+
+    .contact-links a {
+
+
+        width:100%;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   CELULARES PEQUENOS
+================================ */
+
+
+@media(max-width:480px){
+
+
+
+    .hero h1 {
+
+
+        font-size:1.9rem;
+
+    }
+
+
+
+
+    .hero h2 {
+
+
+        font-size:1.15rem;
+
+    }
+
+
+
+    .hero-image img {
+
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+
+
+
+    .project-card h3 {
+
+
+        font-size:1.2rem;
+
+    }
+
+
+
+
+    .tech-item {
+
+
+        font-size:.85rem;
+
+        padding:10px 15px;
+
+    }
+
+
+
+
+    footer {
+
+
+        font-size:.85rem;
+
+    }
+
+
+}
