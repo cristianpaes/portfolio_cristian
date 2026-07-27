@@ -168,9 +168,19 @@ body{
 
 .menu-mobile{
 
-    display:block;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
     color:#38bdf8;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    z-index:2000;
 
 }
 
@@ -394,6 +404,24 @@ body{
     text-align:center;
 
 }
+
+
+}
+
+/* CORREÇÃO MOBILE - VISIBILIDADE */
+
+@media(max-width:768px){
+
+    .hero-image,
+    .profile-animation{
+
+        opacity:1 !important;
+
+        visibility:visible !important;
+
+        transform:none !important;
+
+    }
 
 
 }

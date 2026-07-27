@@ -116,26 +116,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const topButton = document.getElementById("topButton");
 
 
+if(topButton){
 
-window.addEventListener("scroll",()=>{
-
-
-    if(window.scrollY > 400){
+    window.addEventListener("scroll",()=>{
 
 
-        topButton.classList.add("show");
+        if(window.scrollY > 400){
+
+            topButton.classList.add("show");
 
 
-    }else{
+        }else{
+
+            topButton.classList.remove("show");
+
+        }
 
 
-        topButton.classList.remove("show");
+    });
 
 
-    }
+
+    topButton.addEventListener("click",()=>{
 
 
-});
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+
+    });
+
+
+}
 
 
 
