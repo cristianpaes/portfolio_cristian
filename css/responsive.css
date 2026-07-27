@@ -1,141 +1,110 @@
 /* =====================================================
-   RESPONSIVIDADE GERAL
+   RESPONSIVE DESIGN
 ===================================================== */
 
 
-/* ===============================
-   NOTEBOOKS E TELAS MÉDIAS
-================================ */
-
-@media (max-width:1200px){
-
-
-    .hero {
-
-
-        padding:120px 5% 70px;
-
-    }
-
-
-
-    .hero h1 {
-
-
-        font-size:3rem;
-
-    }
-
-
-
-    .hero-image img {
-
-
-        width:280px;
-
-        height:280px;
-
-    }
-
-
-
-    header {
-
-
-        padding:20px 5%;
-
-    }
-
-
-}
-
-
-
-/* ===============================
-   TABLETS
-================================ */
-
+/* TABLETS */
 
 @media(max-width:992px){
 
 
+.container{
 
-    header {
+    width:90%;
 
-
-        padding:20px 5%;
-
-    }
+}
 
 
+.hero-grid{
 
-    nav ul {
+    grid-template-columns:1fr;
 
+    text-align:center;
 
-        gap:20px;
-
-    }
-
-
+}
 
 
-    .hero {
+.hero-text{
 
+    max-width:100%;
 
-        flex-direction:column-reverse;
-
-        text-align:center;
-
-        justify-content:center;
-
-    }
+}
 
 
 
-    .hero-content {
+.hero-image{
 
+    order:-1;
 
-        max-width:750px;
+    margin-bottom:30px;
 
-    }
-
-
-
-    .hero-buttons {
-
-
-        justify-content:center;
-
-    }
+}
 
 
 
-    .hero-image img {
+.profile-animation{
 
+    width:260px;
 
-        width:250px;
+    height:260px;
 
-        height:250px;
-
-    }
-
-
-
-    .tech-stack {
-
-
-        justify-content:center;
-
-    }
+}
 
 
 
-    .timeline-item {
+.hero-buttons{
+
+    justify-content:center;
+
+}
 
 
-        padding:25px;
 
-    }
+.hero-tech{
+
+    justify-content:center;
+
+}
+
+
+
+.results-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.projects-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.cert-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
 
 
 }
@@ -143,234 +112,297 @@
 
 
 
-
-/* ===============================
+/* =====================================================
    MOBILE
-================================ */
+===================================================== */
 
 
 @media(max-width:768px){
 
 
 
-    body {
+body{
 
+    overflow-x:hidden;
 
-        overflow-x:hidden;
+}
 
-    }
 
 
+/* MENU */
 
-    header {
 
+.menu{
 
-        padding:18px 5%;
 
-    }
+    position:fixed;
 
+    top:70px;
 
+    left:-100%;
 
-    .logo {
+    width:100%;
 
+    background:#020617;
 
-        font-size:1.5rem;
+    display:flex;
 
-    }
+    flex-direction:column;
 
+    align-items:center;
 
+    padding:30px 0;
 
+    gap:25px;
 
-    nav {
+    transition:.3s;
 
+    z-index:1500;
 
-        display:none;
 
-    }
+}
 
 
 
-    .hero {
+.menu.active{
 
 
-        padding-top:110px;
+    left:0;
 
-        min-height:auto;
 
-        gap:35px;
+}
 
-    }
 
 
+.menu-mobile{
 
 
-    .hero h1 {
+    display:flex;
 
+    align-items:center;
 
-        font-size:2.2rem;
+    justify-content:center;
 
-    }
+    color:#38bdf8;
 
+    font-size:32px;
 
+    cursor:pointer;
 
-    .hero h2 {
+    z-index:2000;
 
 
-        font-size:1.3rem;
+}
 
-    }
 
 
+.navbar .container{
 
 
-    .hero p {
+    height:70px;
 
 
-        font-size:.95rem;
+}
 
-    }
 
 
+.logo{
 
 
-    .hero-buttons {
+    font-size:20px;
 
 
-        flex-direction:column;
+}
 
-        width:100%;
 
-    }
 
+/* HERO */
 
 
+#hero{
 
-    .btn-primary,
-    .btn-secondary {
 
+    padding-top:100px;
 
-        width:100%;
 
-        text-align:center;
+}
 
-    }
 
 
+.hero-grid{
 
 
-    .hero-image img {
+    display:flex;
 
+    flex-direction:column;
 
-        width:200px;
 
-        height:200px;
+}
 
-    }
 
 
+.hero-image{
 
 
-    .stats {
+    display:flex;
 
+    justify-content:center;
 
-        grid-template-columns:1fr;
+    width:100%;
 
-        padding:40px 5%;
 
-    }
+}
 
 
 
-    .stat-box h3 {
+.profile-animation{
 
 
-        font-size:2rem;
+    width:220px;
 
-    }
+    height:220px;
 
+    opacity:1!important;
 
+    visibility:visible!important;
 
 
-    .about,
-    .projects,
-    .skills,
-    .certifications,
-    .contact {
+}
 
 
-        padding:60px 5%;
 
-    }
+.hero-text h1{
 
 
+    font-size:38px;
 
 
-    .section-title h2 {
+}
 
 
-        font-size:2rem;
 
-    }
+.hero-text h2{
 
 
+    font-size:28px;
 
 
-    .project-grid {
+}
 
 
-        grid-template-columns:1fr;
 
-    }
+.hero-text h3{
 
 
+    font-size:20px;
 
 
-    .project-card {
+}
 
 
-        padding:25px;
 
-    }
+.hero-text p{
 
 
+    font-size:15px;
 
 
-    .skills-container {
+}
 
 
-        grid-template-columns:1fr;
 
-    }
+.hero-buttons{
 
 
+    flex-direction:column;
 
+    align-items:center;
 
-    .cert-grid {
 
+}
 
-        grid-template-columns:1fr;
 
-    }
 
+.btn-primary,
+.btn-outline{
 
 
+    width:90%;
 
-    .contact-links {
+    justify-content:center;
 
 
-        flex-direction:column;
+}
 
-    }
 
 
 
+/* CARDS */
 
-    .contact-links a {
 
+.results-grid{
 
-        width:100%;
 
-    }
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.projects-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.skills-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.cert-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+/* EXPERIÊNCIA */
+
+
+.timeline-item{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+.footer-grid{
+
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+
+}
+
 
 
 }
@@ -379,75 +411,31 @@
 
 
 
-
-/* ===============================
-   CELULARES PEQUENOS
-================================ */
+/* CELULARES PEQUENOS */
 
 
 @media(max-width:480px){
 
 
-
-    .hero h1 {
-
-
-        font-size:1.9rem;
-
-    }
+.profile-animation{
 
 
+    width:180px;
+
+    height:180px;
 
 
-    .hero h2 {
-
-
-        font-size:1.15rem;
-
-    }
+}
 
 
 
-    .hero-image img {
+.hero-text h1{
 
 
-        width:170px;
-
-        height:170px;
-
-    }
+    font-size:32px;
 
 
-
-
-    .project-card h3 {
-
-
-        font-size:1.2rem;
-
-    }
-
-
-
-
-    .tech-item {
-
-
-        font-size:.85rem;
-
-        padding:10px 15px;
-
-    }
-
-
-
-
-    footer {
-
-
-        font-size:.85rem;
-
-    }
+}
 
 
 }
