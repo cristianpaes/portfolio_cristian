@@ -1,133 +1,42 @@
-/* =====================================================
-   EFEITO DE DIGITAÇÃO - HERO
-===================================================== */
+const typingText = document.getElementById("typing-text");
 
+if (typingText) {
 
-const typingElement = document.getElementById("typing-text");
+    const titles = [
 
+        "Database Administrator",
+        "Performance Tuning Specialist",
+        "SQL Server Expert",
+        "T-SQL Developer",
+        "Microsoft SQL Server DBA",
+        "Database Performance Engineer"
 
-const words = [
+    ];
 
-    "Database Administrator",
+    let title = 0;
 
-    "Analista de Dados",
+    function changeTitle() {
 
-    "Especialista em T-SQL",
+        typingText.style.opacity = 0;
 
-    "Performance Tuning",
+        setTimeout(() => {
 
-    "Automação com Python"
+            typingText.textContent = titles[title];
 
-];
+            typingText.style.opacity = 1;
 
+            title++;
 
-let wordIndex = 0;
+            if (title >= titles.length) {
 
-let charIndex = 0;
-
-let deleting = false;
-
-
-
-function typingEffect(){
-
-
-    if(!typingElement){
-
-        return;
-
-    }
-
-
-
-    const currentWord = words[wordIndex];
-
-
-
-    if(!deleting){
-
-
-        typingElement.textContent =
-
-        currentWord.substring(0,charIndex + 1);
-
-
-        charIndex++;
-
-
-
-        if(charIndex === currentWord.length){
-
-
-            deleting = true;
-
-
-            setTimeout(typingEffect,1500);
-
-
-            return;
-
-        }
-
-
-    }else{
-
-
-        typingElement.textContent =
-
-        currentWord.substring(0,charIndex - 1);
-
-
-
-        charIndex--;
-
-
-
-        if(charIndex === 0){
-
-
-            deleting = false;
-
-
-            wordIndex++;
-
-
-
-            if(wordIndex === words.length){
-
-
-                wordIndex = 0;
-
+                title = 0;
 
             }
 
-
-        }
-
+        },300);
 
     }
 
-
-
-    setTimeout(
-
-        typingEffect,
-
-        deleting ? 60 : 120
-
-    );
-
+    setInterval(changeTitle,3000);
 
 }
-
-
-
-
-
-document.addEventListener(
-
-"DOMContentLoaded",
-
-typingEffect
-
-);
